@@ -1,2 +1,2 @@
 # Dynamic_programmingrep
-Based on lectures by Aditya Veram
+Based on lectures by Aditya Verma
