@@ -33,11 +33,10 @@ long long int count(long long int n)
 
 
 //Method 2:
-
-long long int countrecur(long long int n, vector<int> &list,vector<int>&cache int curr=0)
+long long int countrecur(long long int n, vector<int> &list, int curr=0)
 {   
-    if (n<0)
-        return cache[0];     
+    if (n==0)
+        return 1;     
     else if(n<0)
         return 0;
     else 
@@ -46,7 +45,7 @@ long long int countrecur(long long int n, vector<int> &list,vector<int>&cache in
 
        for (int i=curr;i<list.size();i++ )
        {
-           ans+=countrecur(n-list[i],list,cache,i);
+           ans+=countrecur(n-list[i],list,i);
        }
        return ans;
     }
